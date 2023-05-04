@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using la_mia_pizzeria_static.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace la_mia_pizzeria_static.Controllers
 {
@@ -22,6 +23,13 @@ namespace la_mia_pizzeria_static.Controllers
                 Pizza pizza = pz.Pizzas.Where(p => p.Id == id).FirstOrDefault();
                 return View(pizza);
             }
+        }
+        
+        public IActionResult Create()
+        {
+          
+                return View();
+            
         }
     }
 }
