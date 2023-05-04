@@ -18,6 +18,7 @@
                     <h5 class="card-title">@pizza.Name</h5>
                     <p class="card-text">@pizza.Description</p>
                     <p class="card-text">@pizza.Price$</p>
+                        <a href="@Url.Action("Edit", "Pizza", new {id= pizza.Id})" class="btn btn-primary mb-3">Edit</a>
                     <a href="@Url.Action("Details", "Pizza", new {id= pizza.Id})" class="btn btn-primary">Details</a>
                 </div>
             </div>
